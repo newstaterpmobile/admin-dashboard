@@ -39,7 +39,7 @@
                 </button>
                 <button class="menu-item" data-panel="investigations">
                     <span class="icon">🔍</span>
-                    <span class="label">Ermittlungen</span>
+                    <span class="label">Einsätze & Aufgaben</span>
                 </button>
                 <button class="menu-item" data-panel="tickets">
                     <span class="icon">🎫</span>
@@ -91,8 +91,8 @@
                     <div class="admin-profile">
                         <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%2300ff88'/%3E%3C/svg%3E" alt="Admin">
                         <div class="profile-info">
-                            <span class="profile-name">Admin Master</span>
-                            <span class="profile-role">Super Admin</span>
+                            <span class="profile-name">Jakub Mazur</span>
+                            <span class="profile-role">Project Manager</span>
                         </div>
                     </div>
                     <button class="logout-btn logout-header">Abmelden</button>
@@ -111,7 +111,7 @@
                             <div class="stat-content">
                                 <span class="stat-label">Online Spieler</span>
                                 <span class="stat-value" data-count="7">0</span>
-                                <span class="stat-change">7 Entwickler</span>
+                                <span class="stat-change">[7 Entwickler]</span>
                             </div>
                         </div>
 
@@ -159,8 +159,8 @@
                             <div class="stat-icon">💸</div>
                             <div class="stat-content">
                                 <span class="stat-label">Gesamtwirtschaft</span>
-                                <span class="stat-value">$1.2B</span>
-                                <span class="stat-change">+$45M heute</span>
+                                <span class="stat-value">$0.00</span>
+                                <span class="stat-change">+$0.00 heute</span>
                             </div>
                         </div>
 
@@ -203,16 +203,20 @@
                         <input type="text" placeholder="🔍 Spieler suchen..." class="player-search">
                         <select class="filter-select">
                             <option>Alle Berufe</option>
+                            <option>Admin</option>
                             <option>Polizei</option>
-                            <option>EMS</option>
-                            <option>Mechaniker</option>
-                            <option>Arbeitslos</option>
+                            <option>Rettungsdienst</option>
+                            <option>Armee</option>
+                            <option>BND</option>
+                            <option>Regierung</option>
+                            <option>News</option>
                         </select>
                         <select class="filter-select">
-                            <option>Alle Levels</option>
+                            <option>Alle Level</option>
                             <option>1-10</option>
                             <option>11-20</option>
                             <option>21-30</option>
+                            <option>31+</option>
                         </select>
                     </div>
 
@@ -232,11 +236,11 @@
                             <tbody id="playersTableBody">
                                 <tr>
                                     <td>1</td>
-                                    <td>Rian_Draven</td>
+                                    <td>Arthur_Brown</td>
                                     <td>∞</td>
                                     <td>∞</td>
-                                    <td>Project Manager</td>
-                                    <td>now</td>
+                                    <td>Project Lead</td>
+                                    <td>12 days ago</td>
                                     <td>
                                         <button class="action-btn view-player" title="View">View</button>
                                         <button class="action-btn kick" title="Kick">Kick</button>
@@ -248,11 +252,11 @@
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>Senior_Laronta</td>
+                                    <td>Jakub_Mazur</td>
                                     <td>∞</td>
                                     <td>∞</td>
-                                    <td>Community Manager</td>
-                                    <td>7 days ago</td>
+                                    <td>Project Manager</td>
+                                    <td>12 minutes ago</td>
                                     <td>
                                         <button class="action-btn view-player" title="View">View</button>
                                         <button class="action-btn kick" title="Kick">Kick</button>
@@ -264,11 +268,11 @@
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>Jesse_Virell</td>
+                                    <td>Jersey_Black</td>
                                     <td>∞</td>
                                     <td>∞</td>
-                                    <td>Technical Manager</td>
-                                    <td>2 days ago</td>
+                                    <td>Community Manager</td>
+                                    <td>no data</td>
                                     <td>
                                         <button class="action-btn view-player" title="View">View</button>
                                         <button class="action-btn kick" title="Kick">Kick</button>
@@ -344,11 +348,11 @@
                                 </tr>
                                 <tr>
                                     <td>8</td>
-                                    <td>Jersey_Black</td>
+                                    <td>Leon_Brandt</td>
                                     <td>∞</td>
                                     <td>∞</td>
-                                    <td>Head of Administration</td>
-                                    <td>no Data</td>
+                                    <td>Lead Administrator</td>
+                                    <td>no data</td>
                                     <td>
                                         <button class="action-btn view-player" title="View">View</button>
                                         <button class="action-btn kick" title="Kick">Kick</button>
@@ -359,12 +363,28 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>9</td>
-                                    <td>Roman_Haylie</td>
+                                    <td>9_N.RP-1.3.22</td>
+                                    <td>NewState-LiveEditor</td>
                                     <td>∞</td>
                                     <td>∞</td>
-                                    <td>DE - Server Leader</td>
-                                    <td>no Data</td>
+                                    <td>AssistSystem</td>
+                                    <td>now</td>
+                                    <td>
+                                        <button class="action-btn view-player" title="View">View</button>
+                                        <button class="action-btn kick" title="Kick">Kick</button>
+                                        <button class="action-btn ban" title="Ban">Ban</button>
+                                        <button class="action-btn teleport" title="Teleport">TP</button>
+                                        <button class="action-btn money" title="Give Money">Money</button>
+                                        <button class="action-btn item" title="Give Item">Item</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>GenerelDevAcc</td>
+                                    <td>∞</td>
+                                    <td>∞</td>
+                                    <td>Technical</td>
+                                    <td>now</td>
                                     <td>
                                         <button class="action-btn view-player" title="View">View</button>
                                         <button class="action-btn kick" title="Kick">Kick</button>
@@ -419,6 +439,8 @@
                             <button class="btn-primary btn-lg">Event Erstellen</button>
                             <button class="btn-success btn-lg">Event Starten</button>
                             <button class="btn-danger btn-lg">Event Stoppen</button>
+                            <br>
+                            <button class="btn-primary btn-lg">Live-Editor öffnen</button>
                         </div>
 
                         <div class="control-card">
@@ -440,19 +462,19 @@
                     <div class="economy-stats">
                         <div class="econ-card">
                             <span>Gesamtgeld im Umlauf</span>
-                            <span class="econ-value">$1,245,680,000</span>
+                            <span class="econ-value">$0.00</span>
                         </div>
                         <div class="econ-card">
                             <span>Unternehmensbilanzen</span>
-                            <span class="econ-value">$450,120,000</span>
+                            <span class="econ-value">$0.00</span>
                         </div>
                         <div class="econ-card">
                             <span>Tägliche Steuereinnahmen</span>
-                            <span class="econ-value">$8,750,000</span>
+                            <span class="econ-value">$0.00</span>
                         </div>
                         <div class="econ-card">
                             <span>Geschätztes illegales Geld</span>
-                            <span class="econ-value">$189,340,000</span>
+                            <span class="econ-value">$0.00</span>
                         </div>
                     </div>
 
@@ -506,36 +528,36 @@
 
                     <div class="log-viewer">
                         <div class="log-entry admin">
-                            <span class="log-time">14:32:15</span>
+                            <span class="log-time"></span>
                             <span class="log-type">ADMIN</span>
-                            <span class="log-msg">Admin Master hat den Server neu gestartet</span>
+                            <span class="log-msg"></span>
                         </div>
                         <div class="log-entry player">
-                            <span class="log-time">14:31:42</span>
+                            <span class="log-time"></span>
                             <span class="log-type">SPIELER</span>
-                            <span class="log-msg">JohnDoe hat Job abgeschlossen: Polizeipatrouille</span>
+                            <span class="log-msg"></span>
                         </div>
                         <div class="log-entry economy">
-                            <span class="log-time">14:30:18</span>
+                            <span class="log-time"></span>
                             <span class="log-type">WIRTSCHAFT</span>
-                            <span class="log-msg">Spieler Transaktion: JaneSmith erhielt $5.000</span>
+                            <span class="log-msg"></span>
                         </div>
                         <div class="log-entry police">
-                            <span class="log-time">14:29:55</span>
+                            <span class="log-time"></span>
                             <span class="log-type">POLIZEI</span>
-                            <span class="log-msg">Polizei Verfolgung von SarahConnor gestartet</span>
+                            <span class="log-msg"></span>
                         </div>
                         <div class="log-entry player">
-                            <span class="log-time">14:28:30</span>
+                            <span class="log-time"></span>
                             <span class="log-type">SPIELER</span>
-                            <span class="log-msg">MikeJohnson hat den Server betreten</span>
+                            <span class="log-msg"></span>
                         </div>
                     </div>
                 </section>
 
                 <!-- INVESTIGATIONS PANEL -->
                 <section class="panel" id="investigations">
-                    <h1>Ermittlungen</h1>
+                    <h1>Einsätze & Aufgaben</h1>
                     
                     <button class="btn-primary btn-lg" style="margin-bottom: 20px;">+ Neue Ermittlung</button>
 
@@ -646,54 +668,53 @@
                     <div class="tickets-list">
                         <div class="ticket-item open">
                             <div class="ticket-header">
-                                <span class="ticket-id">#1248</span>
+                                <span class="ticket-id">#7</span>
                                 <span class="ticket-title">Kann auf Haus nicht zugreifen</span>
                                 <span class="ticket-priority high">🔴 Hoch</span>
                                 <span class="ticket-status">Offen</span>
                             </div>
                             <div class="ticket-meta">
-                                <span>Von: JohnDoe</span>
+                                <span>Von: Proxy</span>
                                 <span>Gepostet: vor 2 Stunden</span>
                                 <span>Zugewiesen: admin_user</span>
                             </div>
                             <div class="ticket-preview">
-                                Ich kann auf mein Haus nicht zugreifen. Es wird ein Fehler angezeigt: "Du bist nicht der Besitzer". Bitte hilf!
+                                Test
                             </div>
                             <button class="btn-primary btn-sm">Ticket Öffnen</button>
                         </div>
 
                         <div class="ticket-item pending">
                             <div class="ticket-header">
-                                <span class="ticket-id">#1247</span>
+                                <span class="ticket-id">#8</span>
                                 <span class="ticket-title">Geld nicht erhalten</span>
                                 <span class="ticket-priority medium">🟡 Mittel</span>
                                 <span class="ticket-status">Ausstehend</span>
                             </div>
                             <div class="ticket-meta">
-                                <span>Von: JaneSmith</span>
+                                <span>Von: Proxy</span>
                                 <span>Gepostet: vor 3 Stunden</span>
-                                <span>Zugewiesen: support_team</span>
+                                <span>Zugewiesen: admin_user</span>
                             </div>
                             <div class="ticket-preview">
-                                Ich habe einen Job abgeschlossen, aber habe keine Zahlung erhalten. Transaktions-ID: TX-45823
-                            </div>
+                                Test
                             <button class="btn-primary btn-sm">Ticket Öffnen</button>
                         </div>
 
                         <div class="ticket-item open">
                             <div class="ticket-header">
-                                <span class="ticket-id">#1246</span>
+                                <span class="ticket-id">#9</span>
                                 <span class="ticket-title">Fahrzeug im Boden stecken</span>
                                 <span class="ticket-priority high">🔴 Hoch</span>
                                 <span class="ticket-status">Offen</span>
                             </div>
                             <div class="ticket-meta">
-                                <span>Von: MikeJohnson</span>
+                                <span>Von: Vision</span>
                                 <span>Gepostet: vor 4 Stunden</span>
                                 <span>Nicht zugewiesen</span>
                             </div>
                             <div class="ticket-preview">
-                                Mein Fahrzeug steckt unter der Erde fest und ich sterbe ständig. Bitte hilf!
+                                Test
                             </div>
                             <button class="btn-primary btn-sm">Ticket Öffnen</button>
                         </div>
@@ -841,15 +862,13 @@
                     
                     <div class="event-builder">
                         <div class="event-form">
-                            <h3>Neues Event Erstellen</h3>
+                            <h3>Neues Event erstellen</h3>
                             <input type="text" placeholder="Event Name" class="event-input">
+                            <input type="text" placeholder="LiveEditor-Link" class="event-input">
                             <textarea placeholder="Event Beschreibung" class="event-textarea"></textarea>
                             <input type="time" class="event-input">
                             <select class="event-select">
-                                <option>Rennen</option>
-                                <option>Heist</option>
-                                <option>Battle Royale</option>
-                                <option>Schatzsuche</option>
+                                <option>--</option>
                             </select>
                             <button class="btn-primary btn-lg">Event Erstellen</button>
                         </div>
@@ -909,7 +928,7 @@
                             <h3>🔐 Admin Ränge</h3>
                             <div class="rank-list">
                                 <div class="rank-item">
-                                    <span>Super Admin</span>
+                                    <span>Lead</span>
                                     <button class="btn-primary btn-xs">Bearbeiten</button>
                                     <button class="btn-danger btn-xs">Löschen</button>
                                 </div>
@@ -919,7 +938,7 @@
                                     <button class="btn-danger btn-xs">Löschen</button>
                                 </div>
                                 <div class="rank-item">
-                                    <span>Moderator</span>
+                                    <span>Assist</span>
                                     <button class="btn-primary btn-xs">Bearbeiten</button>
                                     <button class="btn-danger btn-xs">Löschen</button>
                                 </div>
